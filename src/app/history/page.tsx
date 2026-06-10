@@ -128,9 +128,10 @@ export default function HistoryPage() {
   };
 
   return (
-    <div className="flex-1 flex flex-col p-6 pb-28 gap-5 relative h-full overflow-y-auto no-scrollbar">
+    <div className="flex-1 flex flex-col relative h-full overflow-hidden">
       
-      {/* Header */}
+      <div className="flex-1 overflow-y-auto p-4 pb-28 flex flex-col gap-4 no-scrollbar">
+        {/* Header */}
       <div>
         <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">
           Pengeluaran Anda
@@ -272,6 +273,8 @@ export default function HistoryPage() {
             );
           })
         )}
+      </div>
+
       </div>
 
       <Navbar />

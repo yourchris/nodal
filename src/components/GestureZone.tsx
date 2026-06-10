@@ -135,7 +135,7 @@ export default function GestureZone({
 
   return (
     <div
-      className="relative flex-1 w-full bg-slate-950 rounded-3xl border border-slate-900 overflow-hidden flex flex-col items-center justify-center min-h-[360px] touch-none cursor-grab active:cursor-grabbing select-none"
+      className="relative flex-1 w-full bg-slate-950 rounded-3xl border border-slate-900 overflow-hidden flex flex-col items-center justify-center min-h-[250px] touch-none cursor-grab active:cursor-grabbing select-none"
       onTouchStart={(e) => handleStart(e.touches[0].clientX, e.touches[0].clientY)}
       onTouchMove={(e) => handleMove(e.touches[0].clientX, e.touches[0].clientY)}
       onTouchEnd={handleEnd}
